@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Doamne-ajută",
+  "version": "1.0",
+  "description": "msp, pentru ptdee 8/2/2026",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

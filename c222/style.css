@@ -1,0 +1,40 @@
+.ghost-window-container {
+    position: fixed;
+    width: 400px;
+    height: 600px;
+    background: white;
+    border: 1px solid #333;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.4);
+    z-index: 2147483646;
+    resize: both;
+    overflow: hidden;
+    border-radius: 8px;
+    opacity: 0; /* 5% opacitate când nu e activat hover-ul */
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.ghost-window-container:hover {
+    opacity: 20% !important; /* Devine vizibilă 100% la hover */
+}
+
+.win-header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    height: 35px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.ghost-window-container iframe {
+    width: 100%;
+    flex-grow: 1;
+    border: none;
+    background: white;
+}
